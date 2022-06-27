@@ -1,0 +1,19 @@
+<%- include("../partials/head") %>
+<body style="background:#eee">
+<%- include("../partials/signednavbar") %>
+<div style="margin-top:2vh;" class="container">
+<% soru.forEach(soru => { %>
+<div class="card col-md-8">
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-12">
+    <h5 class="card-title"><%- soru.title %></h5>
+    <p class="card-text"><%- soru.short %></p>
+    <label><%- soru.goruntulenme %> Görüntülenme</label><br><br>
+      <a href="/soru/<%- soru.id %>"><button type="button" class="btn btn-primary">Testi Çöz</button></a>
+      </div>
+      </div>
+  </div>
+</div>
+<% }) %>
+  </div>
