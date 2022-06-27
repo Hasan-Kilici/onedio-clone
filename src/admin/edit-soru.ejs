@@ -1,0 +1,190 @@
+<%- include("../partials/head") %>
+<%- include("../partials/adminnavbar") %>
+<style>
+  input{margin-top:2vh;}  
+  button{margin-top:2vh;}
+  textarea{margin-top:2vh;}
+</style>
+<div class="container"><br>
+<form method="POST" action="/soru-guncelle/<%- soru._id %>">
+<input type="text" id="title" name="title" class="form-control" value="<%= soru.title %>"/>
+<label>Soru Başlık</label>
+<input type="text" id="short" name="short" class="form-control" value="<%= soru.short %>"/>
+<label>Soru Kısa yazı</label>
+<h3>Soru 1</h3>
+<input type="text" id="soru1" name="soru1" class="form-control" value="<%= soru.soru1 %>"/>
+<div class="row">
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik1" name="sik1" class="form-control" value="<%= soru.sik1 %>"/>
+<label>Şık 1</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik2" name="sik2" class="form-control" value="<%= soru.sik2 %>"/>
+<label>Şık 2</label>
+</div>
+  <div class="col-md-6">
+<input style="width:100%" type="text" id="sik3" name="sik3" class="form-control" value="<%= soru.sik3 %>"/>
+<label>Şık 3</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik4" name="sik4" class="form-control" value="<%= soru.sik4 %>"/>
+<label>Şık 4</label>
+</div>
+</div>
+<h3>Soru 2</h3>
+<input type="text" id="soru2" name="soru2" class="form-control" value="<%= soru.soru2 %>"/>
+<div class="row">
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik5" name="sik5" class="form-control" value="<%= soru.sik5 %>"/>
+<label>Şık 1</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik6" name="sik6" class="form-control" value="<%= soru.sik6 %>"/>
+<label>Şık 2</label>
+</div>
+  <div class="col-md-6">
+<input style="width:100%" type="text" id="sik7" name="sik7" class="form-control" value="<%= soru.sik7 %>"/>
+<label>Şık 3</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik8" name="sik8" class="form-control" value="<%= soru.sik8 %>"/>
+<label>Şık 4</label>
+</div>
+</div>
+<h3>Soru 3</h3>
+<input type="text" id="soru3" name="soru3" class="form-control" value="<%= soru.soru3 %>"/>
+<div class="row">
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik9" name="sik9" class="form-control" value="<%= soru.sik9 %>"/>
+<label>Şık 1</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik10" name="sik10" class="form-control" value="<%= soru.sik10 %>"/>
+<label>Şık 2</label>
+</div>
+  <div class="col-md-6">
+<input style="width:100%" type="text" id="sik11" name="sik11" class="form-control" value="<%= soru.sik11 %>"/>
+<label>Şık 3</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik12" name="sik12" class="form-control" value="<%= soru.sik12 %>"/>
+<label>Şık 4</label>
+</div>
+</div>
+<h3>Soru 4</h3>
+<input type="text" id="soru4" name="soru4" class="form-control" value="<%= soru.soru4 %>"/>
+<div class="row">
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik13" name="sik13" class="form-control" value="<%= soru.sik13 %>"/>
+<label>Şık 1</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik14" name="sik14" class="form-control" value="<%= soru.sik14 %>"/>
+<label>Şık 2</label>
+</div>
+  <div class="col-md-6">
+<input style="width:100%" type="text" id="sik15" name="sik15" class="form-control" value="<%= soru.sik15 %>"/>
+<label>Şık 3</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik16" name="sik16" class="form-control" value="<%= soru.sik16 %>"/>
+<label>Şık 4</label>
+</div>
+</div>
+<h3>Soru 5</h3>
+<input type="text" id="soru5" name="soru5" class="form-control" value="<%= soru.soru5 %>"/>
+<div class="row">
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik17" name="sik17" class="form-control" value="<%= soru.sik17 %>"/>
+<label>Şık 1</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik18" name="sik18" class="form-control" value="<%= soru.sik18 %>"/>
+<label>Şık 2</label>
+</div>
+  <div class="col-md-6">
+<input style="width:100%" type="text" id="sik19" name="sik19" class="form-control" value="<%= soru.sik19 %>"/>
+<label>Şık 19</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik20" name="sik20" class="form-control" value="<%= soru.sik20 %>"/>
+<label>Şık 4</label>
+</div>
+</div>
+<h3>Soru 6</h3>
+<input type="text" id="soru6" name="soru6" class="form-control" value="<%= soru.soru6 %>"/>
+<div class="row">
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik21" name="sik21" class="form-control" value="<%= soru.sik21 %>"/>
+<label>Şık 1</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik22" name="sik22" class="form-control" value="<%= soru.sik22 %>"/>
+<label>Şık 2</label>
+</div>
+  <div class="col-md-6">
+<input style="width:100%" type="text" id="sik23" name="sik23" class="form-control" value="<%= soru.sik23 %>"/>
+<label>Şık 3</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik24" name="sik24" class="form-control" value="<%= soru.sik24 %>"/>
+<label>Şık 4</label>
+</div>
+</div>
+<h3>Soru 7</h3>
+<input type="text" id="soru7" name="soru7" class="form-control" value="<%= soru.soru7 %>"/>
+<div class="row">
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik25" name="sik25" class="form-control" value="<%= soru.sik25 %>"/>
+<label>Şık 1</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik26" name="sik26" class="form-control" value="<%= soru.sik26 %>"/>
+<label>Şık 2</label>
+</div>
+  <div class="col-md-6">
+<input style="width:100%" type="text" id="sik27" name="sik27" class="form-control" value="<%= soru.sik27 %>"/>
+<label>Şık 3</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik28" name="sik28" class="form-control" value="<%= soru.sik28 %>"/>
+<label>Şık 4</label>
+</div>
+</div>
+<h3>Soru 8</h3>
+<input type="text" id="soru8" name="soru8" class="form-control" value="<%= soru.soru8 %>"/>
+<div class="row">
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik29" name="sik29" class="form-control" value="<%= soru.sik29 %>"/>
+<label>Şık 1</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik30" name="sik30" class="form-control" value="<%= soru.sik30 %>"/>
+<label>Şık 2</label>
+</div>
+  <div class="col-md-6">
+<input style="width:100%" type="text" id="sik31" name="sik31" class="form-control" value="<%= soru.sik31 %>"/>
+<label>Şık 3</label>
+</div>
+<div class="col-md-6">
+<input style="width:100%" type="text" id="sik32" name="sik32" class="form-control" value="<%= soru.sik32 %>"/>
+<label>Şık 4</label>
+</div>
+</div>
+<h3>Cevaplar</h3>
+<input type="text" id="cevap1" name="cevap1" class="form-control" value="<%= soru.cevap1 %>"/>
+<label>1.Cevap</label><br>
+<textarea id="aciklama1" name="aciklama1"><%- soru.aciklama1 %></textarea><br>
+<label>1.Cevabın açıklaması</label>
+<input type="text" id="cevap2" name="cevap2" class="form-control" value="<%= soru.cevap2 %>"/>
+<label>2.Cevap</label><br>
+<textarea id="aciklama2" name="aciklama2"><%- soru.aciklama2 %></textarea><br>
+<label>2.Cevabın açıklaması</label>
+<input type="text" id="cevap3" name="cevap3" class="form-control" value="<%= soru.cevap3 %>"/>
+<label>3.Cevap</label><br>
+<textarea id="aciklama3" name="aciklama3"><%- soru.aciklama3 %></textarea><br>
+<label>3.Cevabın açıklaması</label><br><br>
+<button type="submit" class="btn btn-primary text-light">
+Gönder  
+</button>
+  </form>
