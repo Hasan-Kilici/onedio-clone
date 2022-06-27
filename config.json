@@ -1,0 +1,8 @@
+{
+    "token":"DiscordBotToken",
+    "CID":"DiscordBotId",
+    "CSECRET":"DiscordBotSecret",
+    "CLB":"s", 
+    "prefix": "-",
+    "MongoDbLink"
+}
