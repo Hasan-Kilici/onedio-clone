@@ -1,0 +1,222 @@
+<%- include("../partials/head") %>
+<%- include("../partials/signednavbar") %>
+<script>
+var sonucc = Math.floor(Math.random() * 3)
+function sonuclari_cikar(){
+if(sonucc == 1){
+document.getElementById("sonuc").innerHTML = "<%- soru.cevap1 %>";
+document.getElementById("sonucaciklama").innerHTML = "<%- soru.aciklama1 %>";
+} if (sonucc == 2){
+document.getElementById("sonuc").innerHTML = "<%- soru.cevap2 %>";  
+document.getElementById("sonucaciklama").innerHTML = "<%- soru.aciklama2 %>";
+} if (sonucc == 3){
+document.getElementById("sonuc").innerHTML = "<%- soru.cevap3 %>";
+document.getElementById("sonucaciklama").innerHTML = "<%- soru.aciklama3 %>";
+}
+}
+function yazdir(){
+sonuclari_cikar()
+}
+</script>
+<br><br><div class="container">
+<h2 id="title" name="title"><%= soru.title%></h2>
+<label><%= soru.short %></label>
+<% if(soru.soru1 == "false") { %>
+<% } else { %>
+<h3><%- soru.soru1 %></h3>
+<form class="row">
+<div class="col-2">
+<input type="radio" id="b1" name="b1" value="<%- soru.sik1 %>"><%- soru.sik1 %>   
+</div> 
+<div class="col-9">
+<input type="radio" id="b1" name="b1" value="<%- soru.sik2 %>"><%- soru.sik2 %>   
+</div>
+<div class="col-2">
+<input type="radio" id="b1" name="b1" value="<%- soru.sik3 %>"><%- soru.sik3 %>   
+</div> 
+<div class="col-8">
+<input type="radio" id="b1" name="b1" value="<%- soru.sik4 %>"><%- soru.sik4 %>   
+</div>
+</form>
+<% } %>
+<% if(soru.soru2 == "false") { %>
+<% } else { %>
+<h3><%- soru.soru2 %></h3>
+<form class="row">
+<div class="col-2">
+<input type="radio" id="b2" name="b2" value="<%- soru.sik5 %>"><%- soru.sik5 %>   
+</div> 
+<div class="col-9">
+<input type="radio" id="b2" name="b2" value="<%- soru.sik6 %>"><%- soru.sik6 %>   
+</div>
+<div class="col-2">
+<input type="radio" id="b2" name="b2" value="<%- soru.sik7 %>"><%- soru.sik7 %>   
+</div> 
+<div class="col-8">
+<input type="radio" id="b2" name="b2" value="<%- soru.sik8 %>"><%- soru.sik8 %>   
+</div>
+</form>
+<% } %>
+<% if(soru.soru3 == "false") { %>
+<% } else { %>
+<h3><%- soru.soru3 %></h3>
+<form class="row">
+<div class="col-2">
+<input type="radio" id="b3" name="b3" value="<%- soru.sik9 %>"><%- soru.sik9 %>   
+</div> 
+<div class="col-9">
+<input type="radio" id="b3" name="b3" value="<%- soru.sik10 %>"><%- soru.sik10 %>   
+</div>
+<div class="col-2">
+<input type="radio" id="b3" name="b3" value="<%- soru.sik11 %>"><%- soru.sik11 %>   
+</div> 
+<div class="col-8">
+<input type="radio" id="b3" name="b3" value="<%- soru.sik12 %>"><%- soru.sik12 %>   
+</div>
+</form>
+<% } %>
+<% if(soru.soru4 == "false") { %>
+<% } else { %>
+<h3><%- soru.soru4 %></h3>
+<form class="row">
+<div class="col-2">
+<input type="radio" id="b4" name="b4" value="<%- soru.sik13 %>"><%- soru.sik13 %>   
+</div> 
+<div class="col-9">
+<input type="radio" id="b4" name="b4" value="<%- soru.sik14 %>"><%- soru.sik14 %>   
+</div>
+<div class="col-2">
+<input type="radio" id="b4" name="b4" value="<%- soru.sik15 %>"><%- soru.sik15 %>   
+</div> 
+<div class="col-8">
+<input type="radio" id="b4" name="b4" value="<%- soru.sik16 %>"><%- soru.sik16 %>   
+</div>
+</form>
+<% } %>
+<% if(soru.soru5 == "false") { %>
+<% } else { %>
+<h3><%- soru.soru5 %></h3>
+<form class="row">
+<div class="col-2">
+<input type="radio" id="b5" name="b5" value="<%- soru.sik17 %>"><%- soru.sik17 %>   
+</div> 
+<div class="col-9">
+<input type="radio" id="b5" name="b5" value="<%- soru.sik18 %>"><%- soru.sik18 %>   
+</div>
+<div class="col-2">
+<input type="radio" id="b5" name="b5" value="<%- soru.sik19 %>"><%- soru.sik19 %>   
+</div> 
+<div class="col-8">
+<input type="radio" id="b5" name="b5" value="<%- soru.sik20 %>"><%- soru.sik20 %>   
+</div>
+</form>
+<% } %>
+<% if(soru.soru6 == "false") { %>
+<% } else { %>
+<h3><%- soru.soru6 %></h3>
+<form class="row">
+<div class="col-2">
+<input type="radio" id="b6" name="b6" value="<%- soru.sik21 %>"><%- soru.sik21 %>   
+</div> 
+<div class="col-9">
+<input type="radio" id="b6" name="b6" value="<%- soru.sik22 %>"><%- soru.sik22 %>   
+</div>
+<div class="col-2">
+<input type="radio" id="b6" name="b6" value="<%- soru.sik23 %>"><%- soru.sik23 %>   
+</div> 
+<div class="col-8">
+<input type="radio" id="b6" name="b6" value="<%- soru.sik24 %>"><%- soru.sik24 %>   
+</div>
+</form>
+<% } %>
+<% if(soru.soru7 == "false") { %>
+<% } else { %>
+<h3><%- soru.soru7 %></h3>
+<form class="row">
+<div class="col-2">
+<input type="radio" id="b7" name="b7" value="<%- soru.sik25 %>"><%- soru.sik25 %>   
+</div> 
+<div class="col-9">
+<input type="radio" id="b7" name="b7" value="<%- soru.sik26 %>"><%- soru.sik26 %>   
+</div>
+<div class="col-2">
+<input type="radio" id="b7" name="b7" value="<%- soru.sik27 %>"><%- soru.sik27 %>   
+</div> 
+<div class="col-8">
+<input type="radio" id="b7" name="b7" value="<%- soru.sik28 %>"><%- soru.sik28 %>   
+</div>
+</form>
+<% } %>
+<% if(soru.soru8 == "false") { %>
+<% } else { %>
+<h3><%- soru.soru8 %></h3>
+<form class="row">
+<div class="col-2">
+<input type="radio" id="b8" name="b8" value="<%- soru.sik29 %>"><%- soru.sik29 %>   
+</div> 
+<div class="col-9">
+<input type="radio" id="b8" name="b8" value="<%- soru.sik30 %>"><%- soru.sik30 %>   
+</div>
+<div class="col-2">
+<input type="radio" id="b8" name="b8" value="<%- soru.sik31 %>"><%- soru.sik31 %>   
+</div> 
+<div class="col-8">
+<input type="radio" id="b8" name="b8" value="<%- soru.sik32 %>"><%- soru.sik32 %>   
+</div>
+</form>
+<% } %>
+<button onclick="yazdir()" class="btn btn-primary bg-primary text-light">
+Gönder  
+</button>
+<h3 id="sonuc"></h3>
+<p id="sonucaciklama"></p>
+<div class="row">
+<div class="col-1">
+<form method="POST" action="/vote-like/<%= soru._id %>">
+<button type="submit" class="btn">
+<i class="fas fa-thumbs-up"></i>
+</button>
+<label><%= soru.alkis %></label>
+</form>
+</div>
+<div class="col-1">
+<form method="POST" action="/vote-haha/<%= soru._id %>">
+<button type="submit" class="btn">
+<i class="fas fa-grin-tears"></i>
+</button>
+<label><%= soru.haha %></label>
+</form>
+</div>
+<div class="col-1">
+<form method="POST" action="/vote-dislike/<%= soru._id %>">
+<button type="submit" class="btn">
+<i class="fas fa-thumbs-down"></i>
+</button>
+<label><%= soru.dislike %></label>
+</form>
+</div>
+<div class="col-1">
+<form method="POST" action="/vote-angry/<%= soru._id %>">
+<button type="submit" class="btn">
+<i class="fas fa-angry"></i>
+</button>
+<label><%= soru.kizgin %></label>
+</form>
+</div>
+</div>
+<h3>Yorumlar</h3>
+<% yorum.forEach(yorum => { %>
+<p><%= yorum.kullanici_adi %></p>
+<label><%= yorum.mesaj %></label><br>
+<form method="POST" action="/like-comment/<%= yorum._id %>">
+<button type="submit" class="btn"><i class="fas fa-heart"></i> <%= yorum.like %></button> 
+</form>
+<% }) %>
+<h5>Yorum yap</h5>
+<form method="POST" action="/yorum-ekle/<%= soru._id %>">
+<textarea class="col-7" id="yorum" name="yorum"></textarea><br><br>
+<button type="submit" class="btn btn-primary">
+Gönder  
+</button>
+  </form>
+</div>
