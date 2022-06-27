@@ -1,0 +1,43 @@
+<%- include("../partials/head") %>
+<%- include("../partials/adminnavbar") %>
+<div class="container">
+<h3>Soru oluştur</h3>
+<form method="POST" action="/soru-olustur">
+<div class="form-outline mb-4">
+    <input type="text" id="title" name="title" class="form-control" />
+    <label class="form-label">Başlık</label>
+  </div>
+  <div class="form-outline mb-4">
+    <input type="text" id="short" name="short" class="form-control" />
+    <label class="form-label">Kısa açıklama</label>
+  </div>
+<button type="submit" class="btn btn-primary bg-primary">
+Gönder
+  </button>
+</form>
+<h3>Sorular</h3>
+<p>Soru sayısı : <%= sorusayi %></p>
+<% soru.forEach(soru => { %>
+<div class="card col-md-8">
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-2">
+    <img style="border-radius:5px" src="https://cdn.glitch.com/d6d5157b-176b-4932-91ed-8c44621b496d%2Fsmart_speaker_chat_bot-01-01-128.webp?v=1625785208681" width="100%" height="100px">  
+    </div>
+    <div class="col-md-8">
+      <a href="/soru/<%- soru.id %>"><h5 class="card-title"><%- soru.title %></h5></a>
+    <p class="card-text"><%- soru.short %></p>
+    <form style="float:left;margin-right:1vw;" method="POST" action="/soru-sil/<%- soru.id %>"><button type="submit" style="width:100px" class="btn btn-danger bg-danger text-light">Sil</button></form>
+    <form method="POST" action="/soru-guncellestir/<%- soru.id %>">
+    <button type="submit" style="width:100px" class="btn btn-primary bg-primary text-light">
+    Düzenle  
+    </button>  
+    </form>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<% }) %>
+  
+  </div>
